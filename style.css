@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Montserrat:wght@500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-seirf;
+}
+
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--cream);
+}
+
+main {
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    width: 500px;
+    overflow: hidden;
+}
+
+main div {
+    flex-basis: 50%;
+}
+
+main .product-img img{
+    width: 100%;
+    height: 100%;
+}
+
+main .right-section {
+    padding: 29px;
+}
+
+.perfume {
+    font-size: 12px;
+    color: var(--dark-grayish-blue);
+    font-weight: 600;
+    letter-spacing: 8px;
+}
+
+.french-text {
+    margin: 16px 0;
+}
+
+.french-text, .main-price {
+    font-family: "Fraunces", sans-serif;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.about {
+    font-size: 12px;
+    color: var(--dark-grayish-blue);
+    line-height: 18px;
+}
+
+.price {
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-price {
+    color: var(--dark-cyan);
+}
+
+.stroked-price {
+    font-size: 12px;
+    margin-right: 20px;
+    color: var(--dark-grayish-blue);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+    color: var(--white);
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background: var(--dark-cyan);
+    cursor: pointer;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button img {
+    width: 13px;
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: var(--very-dark-blue);
+}
+
+footer {
+    position: absolute;
+    bottom: 4px;
+}
+
+footer .attribution {
+    font-size: 13px;
+}
+
+.attribution a {
+    font-family: "Fraunces", sans-serif;
+    color: var(--dark-cyan);
+}
+
+@media screen and (max-width: 375px) {
+    main { 
+        width: 93%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        margin-top: -40px;
+    }
+
+    .product-img {
+        height: 270px;
+    }
+
+    footer .attribution {
+        text-align: center;
+    }
+}
